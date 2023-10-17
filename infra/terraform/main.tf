@@ -6,7 +6,7 @@ resource "aws_db_subnet_group" "mixfast_rds_subnet_private" {
 }
 
 resource "aws_security_group" "mixfast_rds_security_group" {
-  name        = "${var.name}_rds_security_group"
+  name        = "${var.name}-rds-security-group"
   description = "Grupo de seguranca do banco de dados mixfast"
   vpc_id      = var.vpc_id
 
