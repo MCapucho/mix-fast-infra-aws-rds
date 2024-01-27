@@ -58,7 +58,7 @@ resource "aws_db_instance" "mixfastpagamento_rds" {
   allow_major_version_upgrade = true
   username                    = var.username
   password                    = local.mixfast_db_password.dbpassword
-  port                        = "3307"
+  port                        = var.port
   identifier                  = "${var.identifier}pagamento"
   parameter_group_name        = var.parameter_group_name
   skip_final_snapshot         = var.skip_final_snapshot
