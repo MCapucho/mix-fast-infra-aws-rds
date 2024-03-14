@@ -16,11 +16,11 @@ variable "name" {
 }
 
 variable "vpc_id" {
-  default = "vpc-0a928f18f52e3f526"
+  default = "vpc-037ba6b40e5c0940e"
 }
 variable "subnet_ids" {
   type = list
-  default = ["subnet-0198e7b9ff52acdac", "subnet-05691a4d1254db9da", "subnet-006d238e997fb3f7c"]
+  default = ["subnet-0b6ba360545c8df89", "subnet-0f0faded7bb089ad6", "subnet-033fb61c63bb98830"]
 }
 variable "engine" {
   description = "The database engine"
